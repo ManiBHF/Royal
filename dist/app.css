@@ -1,0 +1,56 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: danawt;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/woff2/DanaFaNum-Bold.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Bold.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+
+  @font-face {
+    font-family: danawt;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/woff2/DanaFaNum-Regular.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Regular.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+}
+@tailwind components;
+
+@layer components {
+  .border-style {
+    @apply border border-gray-300;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .over-gradient {
+    @apply content-['']
+    h-[200px]
+    left-0
+    absolute
+    right-0
+    top-0;
+  }
+  .fixed-top {
+    @apply left-0 fixed translate-y-0 top-0 w-full z-50;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@tailwind utilities;
+
+body {
+  @apply font-danawt;
+}
+
+@com
+
