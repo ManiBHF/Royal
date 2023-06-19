@@ -161,7 +161,7 @@
       >
         <ul
           class="flex items-center justify-between w-full h-full px-4"
-          @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
+          @scroll.window="showBar = (window.pageYOffset > ) ? true : false"
         >
           <li>
             <a
@@ -814,7 +814,7 @@
       </div>
     </main>
     <!-- airplane and cloud picture -->
-    <section class="my-36 relative overflow-hidden">
+    <section class="mt-36 relative overflow-hidden">
       <div class="relative">
         <picture class="flex items-center justify-center relative">
           <img
@@ -899,8 +899,68 @@
         </div>
       </div>
     </section>
+    <!-- Posts Slider -->
+    <section class="mt-12">
+      <h1
+        class="text-center font-bold text-2xl border-b w-36 mx-auto border-orange-500 pb-3"
+      >
+        آخرین مقالات
+      </h1>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section
+              class="shadow-inner shadow-xl mx-6 rounded-md border-2 h-80 mt-7"
+            >
+              <div>
+                <img
+                  src="./assets/images/upload_4d79b9ce9cf20e00432ef603bd56670a-thumb.webp"
+                  class="h-40 w-full"
+                />
+              </div>
+              <div class="pt-5">
+                <p class="text-lg text-center text-blue-600">
+                  10 نکته که باید در سفر به فرانسه بدانید
+                </p>
+                <p class="mx-5 mt-6 text-center text-sm">
+                  زندگی در مونترال کانادا ویژگی‌های منحصری دارد که پیش از مهاجرت
+                  به مونترال باید مطالعه شود. اطلاعات بیشتر درباره شهر مونترال
+                  کانادا در نیلگام.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section
+              class="shadow-inner shadow-xl mx-6 rounded-md border-2 h-80 mt-7"
+            >
+              <div>
+                <img
+                  src="./assets/images/upload_9f644415a547e8e1a1ec342eaf098629-thumb.webp"
+                  class="h-40 w-full"
+                />
+              </div>
+              <div class="pt-5">
+                <p class="text-lg text-center text-blue-600">
+                  10 نکته که باید در سفر به فرانسه بدانید
+                </p>
+                <p class="mx-5 mt-6 text-center text-sm">
+                  زندگی در مونترال کانادا ویژگی‌های منحصری دارد که پیش از مهاجرت
+                  به مونترال باید مطالعه شود. اطلاعات بیشتر درباره شهر مونترال
+                  کانادا در نیلگام.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+     <div class="flex justify-center mt-5 items-center">
+      <a class="border-blue-600 text-blue-600 border-2 z-10 px-3 py-2 rounded-md" href="#">مقالات بیشتر</a>
+     </div>
+    </section>
 
-    <div></div>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>
@@ -915,6 +975,22 @@
           el: ".swiper-pagination",
           dynamicBullets: true,
           clickable: true,
+        },
+      });
+    </script>
+    <script>
+      let mySwiper2 = new Swiper(".mySwiper2", {
+        pagination: {
+          el: ".swiper-pagination2",
+          type: "progressbar",
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

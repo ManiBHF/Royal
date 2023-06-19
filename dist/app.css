@@ -5,7 +5,9 @@
     font-family: danawt;
     font-style: normal;
     font-weight: bold;
-    src: url("../fonts/woff2/DanaFaNum-Bold.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Bold.woff") format("woff");
+    src: url("../fonts/woff2/DanaFaNum-Bold.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Bold.woff")
+        format("woff");
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
   }
 
@@ -13,7 +15,9 @@
     font-family: danawt;
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/woff2/DanaFaNum-Regular.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Regular.woff") format("woff");
+    src: url("../fonts/woff2/DanaFaNum-Regular.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Regular.woff")
+        format("woff");
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
   }
 }
@@ -52,5 +56,18 @@ body {
   @apply font-danawt;
 }
 
-@com
+.mySwiper2 .swiper-button-next{
+  @apply w-12 h-12 rounded-lg bg-white bg-opacity-40 backdrop-blur-sm border-blue-600 border-2;
+}
 
+.mySwiper2 .swiper-button-next::after {
+  @apply text-2xl;
+}
+
+.mySwiper2 .swiper-button-prev{
+  @apply w-12 h-12 rounded-lg bg-white bg-opacity-40 backdrop-blur-sm border-blue-600 border-2;
+}
+
+.mySwiper2 .swiper-button-prev::after {
+  @apply text-2xl;
+}
