@@ -161,7 +161,7 @@
       >
         <ul
           class="flex items-center justify-between w-full h-full px-4"
-          @scroll.window="showBar = (window.pageYOffset > ) ? true : false"
+          @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
         >
           <li>
             <a
@@ -956,12 +956,74 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-     <div class="flex justify-center mt-5 items-center">
-      <a class="border-blue-600 text-blue-600 border-2 z-10 px-3 py-2 rounded-md" href="#">مقالات بیشتر</a>
-     </div>
+      <div class="flex justify-center mt-5 items-center">
+        <a
+          class="border-blue-600 text-blue-600 border-2 z-10 px-3 py-2 rounded-md"
+          href="#"
+          >مقالات بیشتر</a
+        >
+      </div>
     </section>
-
+    <!-- khadamat mosaferi -->
+    <section class="mb-32">
+      <div class="pt-16 mx-5">
+        <h2 class="text-center text-2xl font-bold">
+          خدمات مسافرتی | موسسه مهاجرتی
+        </h2>
+        <h2 class="my-2 text-lg">خدمات مسافرتی</h2>
+        <p>
+          اگر می خواهید تا در آینده ای نزدیک، ویزای یکی از کشورهای معتبر دنیا را
+          گرفته و به آن کشور سفر کنید، اما دارای تجربه کافی برای انجام اموری
+          نظیر رزرو وقت سفارت، آماده سازی مدارک، تکمیل و ارسال فرم درخواست ویزا
+          و موارد این چنینی نیستید، پیشنهاد ما به شما، استفاده از خدمات تخصصی یک
+          دفتر مهاجرتی معتبر است.
+        </p>
+        <span id="dots"></span>
+        <span id="more" class="hidden">
+          <p class="my-2 text-lg">
+            شرکت خدمات مسافرتی و موسسه مهاجرتی نیلگام یکی از شرکت های فعال در
+            زمینه خدمات ویزا و اخذ اقامت کشورهای معتبر و مطرح دنیا است که دارای
+            بیش از 10 سال سابقه موفق خدمت رسانی به ایرانیان عزیز بوده و انواع
+            خدمات تخصصی ویزا، مهاجرت و اخذ اقامت را به مشتریان محترم ارائه می
+            دهد.
+          </p>
+          <p class="my-2 text-lg">
+            به طور کلی، خدمات متنوع مسافرتی موسسه مهاجرتی نیلگام به 3 دسته اصلی
+            خدمات
+            <a class="my-2 text-lg" href="#">ویزا</a>، خدمات اقامت و پیکاپ ویزا
+            تقسیم می شود.
+          </p>
+          <p class="my-2 text-lg">
+            خدمات ویزای موسسه مهاجرتی نیلگام شامل اخذ وقت سفارت و دریافت انواع
+            ویزای توریستی کانادا، ویزای توریستی انگلیس، ویزای توریستی شینگن
+            (سوئیس و سوئد) و ویزای کشورهایی نظیر ژاپن و استرالیا می شود.
+          </p>
+        </span>
+      </div>
+      <div class="flex text-center justify-center mt-5 bg-white">
+        <button onclick="myFunction()" id="myBtn" class="text-blue-500">
+          اطلاعات بیشتر
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-down"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="fa fa-fw svg-inline--fa fa-chevron-down mr-2 text-blue-500"
+          >
+            <path
+              fill="currentColor"
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              class=""
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </section>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/raw.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
