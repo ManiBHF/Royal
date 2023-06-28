@@ -4,25 +4,28 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1rem',
+      padding: "2rem",
     },
     fontFamily: {
-      'danawt': 'danawt'
+      danawt: "danawt",
     },
     extend: {
       boxShadow: {
-        'mobile-menu': '0 0px 10px 0px rgba(0, 0, 0, .14);',
-        'country-card':  '0 2px 20px hsla(0,0%,65%,.342);',
+        "mobile-menu": "0 0px 10px 0px rgba(0, 0, 0, .14);",
+        "country-card": "0 2px 20px hsla(0,0%,65%,.342);",
       },
-    keyframes: {
-      cloud: {
-        '100%': {left : '100%'},
-      }
-    },
-    animation: {
-      cloud: 'cloud 3s linear infinite',
-    }
+      backgroundImage: {
+        "footer-texture": "url('./assets/images/footerImg.webp')",
+      },
+      keyframes: {
+        cloud: {
+          "100%": { left: "100%" },
+        },
+      },
+      animation: {
+        cloud: "cloud 3s linear infinite",
+      },
     },
   },
   plugins: [],
-}
+};
