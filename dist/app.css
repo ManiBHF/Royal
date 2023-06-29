@@ -71,3 +71,7 @@ body {
 .mySwiper2 .swiper-button-prev::after {
   @apply text-2xl;
 }
+.footerContentImg {
+  -webkit-mask-image: linear-gradient(0deg,#000 90%,transparent);
+  mask-image: linear-gradient(0deg,#000 90%,transparent);
+}
