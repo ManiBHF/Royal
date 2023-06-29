@@ -75,3 +75,89 @@ body {
   -webkit-mask-image: linear-gradient(0deg,#000 90%,transparent);
   mask-image: linear-gradient(0deg,#000 90%,transparent);
 }
+.white-shadow-bottom {
+  background-image: linear-gradient(0deg, #fcfcfc, transparent, transparent, transparent);
+  bottom: 0;
+}
+
+.white-shadow-top {
+  background-image: linear-gradient(180deg, #fcfcfc, transparent);
+  top: 0;
+}
+
+svg .country:hover {
+  stroke: #777;
+  opacity: .7
+}
+
+.st0,
+.st3,
+.st4,
+.st5,
+.st6,
+.st7,
+.st8,
+.st9 {
+  stroke: #ccc;
+  stroke-width: .5;
+  fill: #31a8f2
+}
+
+.st0 {
+  fill: #ddd;
+  stroke: #ddd;
+  stroke-width: 1
+}
+
+.st2 {
+  fill: transparent
+}
+.tooltip{
+  opacity: 0;
+  visibility: hidden;
+}
+.showTooltip{
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip .tooltipTitle {
+  background: #afc7ff;
+  border-radius: 5px;
+  color: #313131;
+  height: 40px;
+  text-align: center;
+  width: 120px
+}
+
+.tooltip .tooltipLineHorizontal {
+  border-top: 2px solid #8390c1;
+  content: "";
+  height: 2px;
+  margin-left: 3px;
+  margin-right: -2px;
+  width: 40px
+}
+
+.tooltip .tooltipLineVertical {
+  border-right: 2px solid #8390c1;
+  content: "";
+  height: 80px;
+  left: 100%;
+  position: absolute;
+  top: 50%;
+  width: 2px
+}
+
+.tooltip:hover {
+  cursor: pointer
+}
+
+.tooltip.flipY {
+  transform: rotateY(180deg);
+  transform-origin: right
+}
+
+.tooltip.flipY .tooltipTitle {
+  transform: rotateY(180deg)
+}

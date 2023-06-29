@@ -19,12 +19,16 @@ module.exports = {
       },
       keyframes: {
         cloud: {
-          "100%": { left: "100%" },
+          '100%': {left : '100%'},
+        },
+        cloud2: {
+          '100%': {right : '0'},
         },
       },
       animation: {
-        cloud: "cloud 3s linear infinite",
-      },
+        cloud: 'cloud 50s linear infinite',
+        cloud2: 'cloud2 50s linear infinite',
+      }
     },
   },
   plugins: [],
